@@ -396,7 +396,8 @@ img {
   padding: 50px 0;
   background-image: url("../images/Rectangle.png");
   background-repeat: no-repeat;
-  background-size: 1400px 830px;
+  background-size: 100%;
+  background-position: center;
   background-blend-mode: overlay;
   background-color: #0a775f;
 }
@@ -428,7 +429,7 @@ img {
   margin-bottom: 20px;
   background-image: url("../images/line.png");
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 68%;
   background-position: center left;
 }
 
