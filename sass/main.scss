@@ -4,22 +4,26 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v30-latin-regular.woff") format("woff");
 }
 /* roboto-500 - latin */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2"), url("../fonts/roboto-v30-latin-500.woff") format("woff");
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2"),
+    url("../fonts/roboto-v30-latin-500.woff") format("woff");
 }
 /* roboto-700 - latin */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin-700.woff") format("woff");
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"),
+    url("../fonts/roboto-v30-latin-700.woff") format("woff");
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,8 +38,7 @@ body {
 
 img {
   vertical-align: middle;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .visually-hidden {
@@ -54,8 +57,8 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 }
-
 /* /general-styles */
+
 /* header-styles */
 .site-header {
   padding: 40px 0;
@@ -121,14 +124,17 @@ img {
   transition: all 0.3s ease;
   opacity: 0.6;
 }
-
 /* /header-styles */
+
 /* main-section-styles */
+
 /* hero-styles */
+
 .hero-section {
   position: relative;
   padding: 116px 0 249px;
-  background-image: url("../images/Rectangle-coffe.png"), url("../images/Rectangle.png");
+  background-image: url("../images/Rectangle-coffe.png"),
+    url("../images/Rectangle.png");
   background-repeat: no-repeat;
   background-size: 710px 696px, 100%;
   background-position: calc(50% + 405px) bottom, center;
@@ -138,7 +144,7 @@ img {
 
 .hero-section::before {
   position: absolute;
-  top: -60px;
+  top: calc(-60px);
   left: calc(50% - 20px);
   width: 160px;
   height: 160px;
@@ -195,8 +201,8 @@ img {
 .hero-section-link:active {
   opacity: 0.6;
 }
-
 /* /hero-styles */
+
 /* collection-styles */
 .collection-section {
   padding: 20px;
@@ -206,7 +212,7 @@ img {
 .collection-section::before {
   position: absolute;
   z-index: 1;
-  top: 110px;
+  top: calc(110px);
   left: calc(50% - 800px);
   width: 300px;
   height: 300px;
@@ -315,8 +321,8 @@ img {
   line-height: 34px;
   color: #333333;
 }
-
 /* /collection-styles */
+
 /* choose-styles */
 .choose {
   padding: 0 20px 239px;
@@ -334,7 +340,7 @@ img {
 
 .choose__list::before {
   position: absolute;
-  top: -45px;
+  top: calc(-45px);
   left: calc(50% - 720px);
   width: 129px;
   height: 136px;
@@ -408,8 +414,8 @@ img {
   line-height: 28px;
   color: #333333;
 }
-
 /* choose-styles */
+
 /* works-styles */
 .works {
   padding: 50px 20px;
@@ -428,7 +434,7 @@ img {
 
 .works__inner::before {
   position: absolute;
-  top: 50px;
+  top: calc(50px);
   left: calc(50% + 450px);
   width: 192px;
   height: 140px;
@@ -545,9 +551,9 @@ img {
   opacity: 0.8;
   transition: all 0.3s ease;
 }
-
 /* /works-styles */
 /* /main-section-styles */
+
 /* footer-styles */
 .site-footer {
   padding: 65px 0;
@@ -662,5 +668,4 @@ img {
   opacity: 0.6;
   transition: all 0.3s ease;
 }
-
-/* /footer-styles *//*# sourceMappingURL=main.css.map */
+/* /footer-styles */
