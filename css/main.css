@@ -75,12 +75,10 @@ img {
   display: inline-block;
   text-decoration: none;
 }
-
 .site-logo-link:hover {
   transition: all 0.3s ease;
   opacity: 0.8;
 }
-
 .site-logo-link:active {
   transition: all 0.3s ease;
   opacity: 0.6;
@@ -110,12 +108,10 @@ img {
   text-transform: uppercase;
   color: #333333;
 }
-
 .site-navbar-link:hover {
   border-bottom: 2px solid #333;
   transition: all 0.3s ease;
 }
-
 .site-navbar-link:active {
   border-bottom: 2px solid #333;
   transition: all 0.3s ease;
@@ -186,12 +182,10 @@ img {
   font-variant: small-caps;
   color: #ffffff;
 }
-
 .hero-section-link:hover {
   background-color: #35ac92;
   transition: all 0.3s ease;
 }
-
 .hero-section-link:active {
   opacity: 0.6;
 }
@@ -535,12 +529,10 @@ img {
   color: #ffffff;
   mix-blend-mode: normal;
 }
-
 .works__link:hover {
   background-color: #ceab83;
   transition: all 0.3s ease;
 }
-
 .works__link:active {
   opacity: 0.8;
   transition: all 0.3s ease;
@@ -568,12 +560,10 @@ img {
   display: inline-block;
   text-decoration: none;
 }
-
 .logo:hover {
   opacity: 0.8;
   transition: all 0.3s ease;
 }
-
 .logo:active {
   opacity: 0.6;
   transition: all 0.3s ease;
@@ -599,12 +589,10 @@ img {
   text-decoration: none;
   color: #333333;
 }
-
 .site-footer__link:hover {
   border-bottom: 2px solid #333;
   transition: all 0.3s ease;
 }
-
 .site-footer__link:active {
   border-bottom: 2px solid #333;
   opacity: 0.6;
@@ -624,12 +612,10 @@ img {
 .list__item-facebook {
   fill: #3a3ad3;
 }
-
 .list__item-facebook:hover {
   fill: #3b6bef;
   transition: all 0.3s ease;
 }
-
 .list__item-facebook:active {
   opacity: 0.6;
   transition: all 0.3s ease;
@@ -638,12 +624,10 @@ img {
 .list__item-twitter {
   fill: #ffffff;
 }
-
 .list__item-twitter:hover {
   fill: #524cef;
   transition: all 0.3s ease;
 }
-
 .list__item-twitter:active {
   opacity: 0.6;
   transition: all 0.3s ease;
@@ -652,12 +636,10 @@ img {
 .list__item-instagram {
   fill: #e43191;
 }
-
 .list__item-instagram:hover {
   fill: #f35aac;
   transition: all 0.3s ease;
 }
-
 .list__item-instagram:active {
   opacity: 0.6;
   transition: all 0.3s ease;
