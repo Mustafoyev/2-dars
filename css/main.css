@@ -625,7 +625,7 @@ img {
   fill: #ffffff;
 }
 .list__item-twitter:hover {
-  fill: #524cef;
+  fill: #1d9bf0;
   transition: all 0.3s ease;
 }
 .list__item-twitter:active {
