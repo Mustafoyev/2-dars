@@ -1,0 +1,62 @@
+/* hero-styles */
+
+.hero-about {
+  position: relative;
+  padding: 116px 0 249px 150px;
+  background-image: url("../images/Rectangle-about1x.png"),
+    url("../images/Rectangle.png");
+  background-repeat: no-repeat;
+  background-size: 710px 696px, 100%;
+  background-position: calc(50% + 405px) bottom, center;
+  background-blend-mode: normal, overlay;
+  background-color: #f3d7b7;
+}
+
+.hero-about::before {
+  position: absolute;
+  top: calc(-60px);
+  left: calc(50% - 20px);
+  width: 160px;
+  height: 160px;
+  background-image: url("../images/image.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+
+.hero-about__inner {
+  width: 372px;
+}
+
+.hero-about__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000000;
+}
+
+.hero-about__text {
+  margin-bottom: 34px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .hero-about {
+    background-image: url("../images/Rectangle-about@2x.png"),
+      url("../images/image@2x.png");
+  }
+}
+
+/* /hero-styles */

@@ -1,0 +1,87 @@
+/* hero-styles */
+
+.hero-section {
+  position: relative;
+  padding: 116px 0 249px 150px;
+  background-image: url("../images/Rectangle-coffe.png"),
+    url("../images/Rectangle.png");
+  background-repeat: no-repeat;
+  background-size: 710px 696px, 100%;
+  background-position: calc(50% + 405px) bottom, center;
+  background-blend-mode: normal, overlay;
+  background-color: #f3d7b7;
+}
+
+.hero-section::before {
+  position: absolute;
+  top: calc(-60px);
+  left: calc(50% - 20px);
+  width: 160px;
+  height: 160px;
+  background-image: url("../images/image.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+
+.hero-section-inner {
+  width: 464px;
+}
+
+.hero-section-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000000;
+}
+
+.hero-section-text {
+  margin-bottom: 34px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.hero-section-link {
+  padding: 16px 24px;
+  display: inline-block;
+  background-color: #0a775f;
+  border-radius: 100px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #35ac92;
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url("../images/Rectangle-coffe@2x.png"),
+      url("../images/image@2x.png");
+  }
+}
+
+/* /hero-styles */

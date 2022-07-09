@@ -1,0 +1,49 @@
+// about-quality-styles
+.quality {
+  position: relative;
+  padding: 80px 20px 20px 20px;
+}
+
+.quality__inner {
+  padding: 100px 30px 90px 143px;
+  background-image: url("../../images/Rectangle-quality-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-blend-mode: overlay;
+  background-color: #c99b67;
+}
+
+.quality__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.quality__content {
+  margin-right: 38px;
+  width: 639px;
+}
+
+.quality__title {
+  margin-bottom: 24px;
+  width: 397px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  font-variant: small-caps;
+  color: #ffffff;
+}
+
+.quality__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.quality__img {
+  position: absolute;
+  top: 0;
+  right: calc(50% - 710px);
+}
