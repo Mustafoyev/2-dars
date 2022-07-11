@@ -54,8 +54,11 @@
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .hero-about {
-    background-image: url("../images/Rectangle-about@2x.png"),
-      url("../images/image@2x.png");
+    background-image: url("../images/Rectangle-about@2x.png");
+  }
+
+  .hero-about::before {
+    background-image: url("../images/image@2x.png");
   }
 }
 

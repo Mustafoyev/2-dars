@@ -27,10 +27,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -65,12 +63,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -78,10 +73,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -98,13 +91,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -122,10 +112,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -175,14 +163,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -250,18 +234,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -284,10 +262,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -303,10 +279,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -321,10 +295,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -547,7 +519,10 @@ main {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url("../images/Rectangle-coffe@2x.png"), url("../images/image@2x.png");
+    background-image: url("../images/Rectangle-coffe@2x.png");
+  }
+  .hero-section::before {
+    background-image: url("../images/image@2x.png");
   }
 }
 /* /hero-styles */
@@ -670,6 +645,20 @@ main {
   color: #333333;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .collection-section::before {
+    background-image: url("../images/Vector-1@2x.png");
+  }
+  .collection-section::after {
+    background-image: url("../images/Vector-3@2x.png");
+  }
+  .collection-inner::before {
+    background-image: url("../images/Vector-2@2x.png");
+  }
+  .collection-inner::after {
+    background-image: url("../images/Fill-1@2x.png");
+  }
+}
 /* /collection-styles */
 /* choose-styles */
 .choose {
@@ -1126,7 +1115,10 @@ main {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .hero-about {
-    background-image: url("../images/Rectangle-about@2x.png"), url("../images/image@2x.png");
+    background-image: url("../images/Rectangle-about@2x.png");
+  }
+  .hero-about::before {
+    background-image: url("../images/image@2x.png");
   }
 }
 /* /hero-styles */
@@ -1141,7 +1133,7 @@ main {
   left: calc(50% - 860px);
   width: 300px;
   height: 300px;
-  background-image: url("../../images/Vector-1.png");
+  background-image: url("../images/Vector-1.png");
   background-repeat: no-repeat;
   background-size: 100%;
   content: "";
@@ -1186,6 +1178,11 @@ main {
   color: #333333;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .about-our::before {
+    background-image: url("../images/Vector-1@2x.png");
+  }
+}
 .quality {
   position: relative;
   padding: 80px 20px 20px 20px;
@@ -1193,7 +1190,7 @@ main {
 
 .quality__inner {
   padding: 100px 30px 90px 143px;
-  background-image: url("../../images/Rectangle-quality-bg.png");
+  background-image: url("../images/Rectangle-quality-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-blend-mode: overlay;
