@@ -1,9 +1,9 @@
 /* hero-styles */
 
-.hero-about {
+.hero-create-plan {
   position: relative;
-  padding: 116px 0 249px 150px;
-  background-image: url("../images/Rectangle-about1x.png"),
+  padding: 116px 0 285px 150px;
+  background-image: url("../images/Rectangle-create-plan.png"),
     url("../images/Rectangle.png");
   background-repeat: no-repeat;
   background-size: 710px 596px, 100%;
@@ -12,9 +12,9 @@
   background-color: #f3d7b7;
 }
 
-.hero-about::before {
+.hero-create-plan::before {
   position: absolute;
-  top: calc(-10px);
+  top: calc(-30px);
   left: calc(50% - 20px);
   width: 160px;
   height: 160px;
@@ -24,11 +24,11 @@
   content: "";
 }
 
-.hero-about__inner {
+.hero-create-plan__inner {
   width: 372px;
 }
 
-.hero-about__title {
+.hero-create-plan__title {
   margin: 0;
   margin-bottom: 24px;
   font-style: normal;
@@ -38,7 +38,7 @@
   color: #000000;
 }
 
-.hero-about__text {
+.hero-create-plan__text {
   margin-bottom: 34px;
   font-style: normal;
   font-weight: 400;
@@ -53,11 +53,11 @@
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .hero-about {
-    background-image: url("../images/Rectangle-about@2x.png");
+  .hero-create-plan {
+    background-image: url("../images/Rectangle-create-plan@2x.png");
   }
 
-  .hero-about::before {
+  .hero-create-plan::before {
     background-image: url("../images/image@2x.png");
   }
 }

@@ -1,0 +1,222 @@
+.radio {
+  padding: 0 20px 50px;
+  position: relative;
+}
+
+.radio::before {
+  position: absolute;
+  z-index: 1;
+  top: calc(50% - 300px);
+  left: calc(50% - 915px);
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/Vector-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+}
+
+.radio::after {
+  position: absolute;
+  top: calc(50% + 400px);
+  left: calc(50% - 1030px);
+  width: 340px;
+  height: 310px;
+  background-image: url("../images/Vector-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+}
+
+.radio__inner {
+  position: relative;
+  padding: 50px 143px 50px 30px;
+  background-image: url("../images/Rectangle-radio.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-blend-mode: overlay;
+  background-color: #f8f8f2;
+}
+
+.radio__inner::before {
+  position: absolute;
+  top: calc(50% - 760px);
+  left: calc(50% + 680px);
+  width: 253px;
+  height: 215px;
+  background-image: url("../images/Vector-2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+
+.radio__inner::after {
+  position: absolute;
+  top: calc(50% - 825px);
+  left: calc(50% + 696px);
+  width: 392px;
+  height: 477px;
+  background-image: url("../images/Fill-1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+
+.radio__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio__list {
+  list-style-type: none;
+}
+
+.radio__item {
+  position: relative;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.radio__item + .radio__item {
+  margin-top: 35px;
+  color: #555555;
+}
+
+.radio__item:nth-child(1)::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 197px;
+  height: 3px;
+  background-image: url("../images/Vector-radio.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+
+.formes__radio {
+  margin-bottom: 60px;
+}
+
+.formes__content {
+  display: flex;
+  list-style-type: none;
+}
+
+.formes__title {
+  margin-bottom: 20px;
+  margin-right: 56px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+}
+
+.label__title {
+  display: inline-block;
+  padding: 16px;
+  margin-right: 10px;
+  width: 206px;
+  height: 220px;
+  background-color: #c5dbcf;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 18px;
+  color: #333333;
+}
+
+.label__title--active {
+  font-size: 14px;
+}
+
+.str {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  font-variant: small-caps;
+  color: #333333;
+}
+
+.formes__input:checked ~ .formes__label > .label__title {
+  background-color: #0a775f;
+  color: #ffffff;
+}
+
+.formes__input:checked ~ .formes__label > .label__title > .str {
+  background-color: #0a775f;
+  color: #ffffff;
+}
+
+.bottom__text {
+  width: 660px;
+  margin-bottom: 20px;
+  padding: 40px 22px 40px 20px;
+  background-image: url("../images/form.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.text__top {
+  margin-bottom: 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.text__bottom {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+}
+
+.black {
+  display: inline-block;
+  color: #333333;
+}
+
+.form__btn {
+  display: inline-block;
+  padding: 16px 24px;
+  margin-left: 500px;
+  border: none;
+  background-color: #0a775f;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  color: #ffffff;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .radio::before {
+    background-image: url("../images/Vector-1@2x.png");
+  }
+
+  .radio::after {
+    background-image: url("../images/Vector-3@2x.png");
+  }
+
+  .radio__inner::before {
+    background-image: url("../images/Vector-2@2x.png");
+  }
+
+  .radio__inner::after {
+    background-image: url("../images/Fill-1@2x.png");
+  }
+}
