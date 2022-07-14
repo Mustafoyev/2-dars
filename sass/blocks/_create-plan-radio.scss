@@ -40,8 +40,8 @@
 
 .radio__inner::before {
   position: absolute;
-  top: calc(50% - 760px);
-  left: calc(50% + 680px);
+  top: calc(50% - 730px);
+  left: calc(50% + 620px);
   width: 253px;
   height: 215px;
   background-image: url("../images/Vector-2.png");
@@ -53,7 +53,7 @@
 .radio__inner::after {
   position: absolute;
   top: calc(50% - 825px);
-  left: calc(50% + 696px);
+  left: calc(50% + 625px);
   width: 392px;
   height: 477px;
   background-image: url("../images/Fill-1.png");
@@ -114,6 +114,16 @@
   color: #000000;
 }
 
+.formes__input:checked ~ .label__title {
+  background-color: #0a775f;
+  color: #ffffff;
+}
+
+.formes__input:checked ~ .label__title > .str {
+  background-color: #0a775f;
+  color: #ffffff;
+}
+
 .label__title {
   display: inline-block;
   padding: 16px;
@@ -131,6 +141,10 @@
   font-size: 14px;
 }
 
+.active {
+  font-size: 15px;
+}
+
 .str {
   display: inline-block;
   width: 100%;
@@ -142,16 +156,6 @@
   color: #333333;
 }
 
-.formes__input:checked ~ .formes__label > .label__title {
-  background-color: #0a775f;
-  color: #ffffff;
-}
-
-.formes__input:checked ~ .formes__label > .label__title > .str {
-  background-color: #0a775f;
-  color: #ffffff;
-}
-
 .bottom__text {
   width: 660px;
   margin-bottom: 20px;
@@ -159,6 +163,10 @@
   background-image: url("../images/form.png");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.bottom__text {
+  margin-right: 115px;
 }
 
 .text__top {
@@ -185,7 +193,7 @@
 .form__btn {
   display: inline-block;
   padding: 16px 24px;
-  margin-left: 500px;
+  margin-left: 504px;
   border: none;
   background-color: #0a775f;
   border-radius: 100px;
