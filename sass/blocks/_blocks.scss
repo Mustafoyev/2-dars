@@ -1,25 +1,29 @@
-@import "visually-hidden";
-@import "container";
-@import "header";
-@import "hero";
-@import "collection";
-@import "choose";
-@import "works";
-@import "footer";
+@import 'visually-hidden';
+@import 'container';
+@import 'header';
+@import 'hero';
+@import 'collection';
+@import 'choose';
+@import 'works';
+@import 'footer';
 
 // about-page-styles
 
-@import "about-header";
-@import "about-hero";
-@import "about-our";
-@import "about-quality";
-@import "about-headquarters";
-@import "about-footer";
+@import 'about-header';
+@import 'about-hero';
+@import 'about-our';
+@import 'about-quality';
+@import 'about-headquarters';
+@import 'about-footer';
 
 // create-plan-page-styles
 
-@import "create-plan-header";
-@import "create-plan-hero";
-@import "create-plan-works";
-@import "create-plan-radio";
-@import "create-plan-footer";
+@import 'create-plan-header';
+@import 'create-plan-hero';
+@import 'create-plan-works';
+@import 'create-plan-radio';
+@import 'create-plan-footer';
+
+// modal-styles
+
+@import 'modal';
